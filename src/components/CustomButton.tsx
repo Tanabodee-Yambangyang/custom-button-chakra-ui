@@ -10,7 +10,18 @@ export default function CustomButton({
     leftIcon=<CiCircleInfo size="2vw" />
 }) {
     return(
-        <Button colorScheme={color} size={size} variant={style} leftIcon={leftIcon}>
+        <Button 
+            className="
+                transition 
+                duration-300 
+                hover:-translate-y-1
+                hover:scale-105
+            " 
+            colorScheme={color} 
+            size={size} 
+            variant={style} 
+            leftIcon={leftIcon}
+        >
             {buttonName}
         </Button>
     )
